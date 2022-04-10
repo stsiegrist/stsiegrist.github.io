@@ -1,7 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+		<meta name="Author" content="Stefan Siegrist" >
+		<meta name="description" content="Spirituelle Numerologie Programm" >
+		<meta name="keywords" content="Spirituelle Numerologie, Numerologie, Programm, Chart, Zeichen, Moses, Berechnen" >
+		<title>Spirituelle Numerologie (c) by Stefan Siegrist</title>
+		<script src="namen.js?202204092030" type="text/javascript"></script>
+		<script src="numerologie.js?202204092030" type="text/javascript"></script>
+	</head>
+	<body style="text-align:center" marginheight="0" marginwidth="0" onload="init();">
+		<div style="width:810px;margin:0px auto;text-align:left;">
+		<!--  Navigation  -->
+		<div id="content">
+			<h2>Spirituelle Numerologie des MOSES</h2>
+			<input type="text" id="nameneingabe" size="50" onkeydown="if (event.keyCode == 13) checkState();"><br>
+			<input type="checkbox" id="simpleChart">Firmen- oder Vereinsnamen<br>
+			<input type="button" value="Ok" onclick="checkState()">
+			<input type="button" value="Reset" onclick="clearChart(1)">
+			<br>
+			<canvas id="canvas" width="800" height="600"></canvas>
+			</div>
+		</div>
+	</body>
+
 </html>
